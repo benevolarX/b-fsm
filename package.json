@@ -1,5 +1,7 @@
 {
   "name": "b-fsm",
+  "version": "0.0.1",
+  "private": true,
   "module": "index.ts",
   "type": "module",
   "main": "dist/index.js",
@@ -9,6 +11,19 @@
       "import": "./index.ts",
       "require": "./dist/index.js"
     }
+  },
+  "keywords": [
+    "fsm"
+  ],
+  "homepage": "https://github.com/benevolarX/b-fsm#readme",
+  "bugs": {
+    "url": "https://github.com/benevolarX/b-fsm/issues"
+  },
+  "license": "MIT",
+  "author": "benevolarX",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benevolarX/b-fsm.git"
   },
   "scripts": {
     "build": "bun build index.ts --outdir dist --minify && tsc",
@@ -20,5 +35,8 @@
   },
   "peerDependencies": {
     "typescript": "^7.0.2"
+  },
+  "engines": {
+    "node": ">=24"
   }
 }
