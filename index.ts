@@ -140,8 +140,7 @@ export function fsm<StatesName extends string, EventsName extends string>() {
   const transition = privatePrepareTransition<EventsName, StatesName>;
   const state = privatePrepareState<EventsName, StatesName>;
   const createMachine = privatePrepareMachine<EventsName, StatesName>;
-  const interpret = (machine: ReturnType<typeof createMachine>) =>
-    new Service(machine);
+  const interpret = (machine: ReturnType<typeof createMachine>) => new Service(machine);
   return {
     transition,
     state,
